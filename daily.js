@@ -9,6 +9,15 @@
         p.reverb ? `reverb ${p.reverb}` : '', p.delay ? `delay ${p.delay}` : '', p.drive ? `drive ${p.drive}` : '',
     ].filter(Boolean).join(' · ');
 
+    const css = document.createElement('style');
+    css.textContent = `
+        #pieces .cover { display: block; width: 100%; max-height: 520px; object-fit: cover; border: 2px solid #000; margin: 0 0 10px; }
+        #pieces .roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; margin: 8px 0; }
+        #pieces .roles figure { margin: 0; }
+        #pieces .roles img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid #000; }
+        #pieces .roles figcaption { font-size: 0.8em; margin-top: 2px; }`;
+    document.head.appendChild(css);
+
     fetch(base + 'pieces.json', { cache: 'no-cache' })
         .then(r => r.json())
         .then(list => {
@@ -16,9 +25,12 @@
             root.innerHTML = list.map((p, i) => `
                 <article class="piece${i === 0 ? ' latest' : ''}">
                     <h3><span class="year-tag">#${list.length - i}</span>${esc(fmt(p.date))}</h3>
+                    ${p.cover ? `<img class="cover" src="${base}${esc(p.cover)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}">` : ''}
                     <audio controls preload="${i === 0 ? 'metadata' : 'none'}" src="${base}${esc(p.file)}"></audio>
                     <p class="meta">${esc(styleLine(p))}</p>
-                    <p class="sounds">${p.folders.map(esc).join(' / ')}</p>
+                    ${p.images ? `<div class="roles">${Object.entries(p.images).map(([role, src]) => `
+                        <figure><img src="${base}${esc(src)}" alt="" loading="lazy"><figcaption>${esc(role)}</figcaption></figure>`).join('')}</div>`
+                        : `<p class="sounds">${p.folders.map(esc).join(' / ')}</p>`}
                     <details><summary>${p.sounds.length} sounds</summary><ul>${p.sounds.map(s => `<li>${esc(s)}</li>`).join('')}</ul></details>
                 </article>`).join('');
             // one piece at a time
