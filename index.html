@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mixer | AL HUT</title>
+    <meta name="description" content="A new piece every morning, made with the Mixer Abo Kalleb from Al Hut's sound archive.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --ink: #0b0b0c; --paper: #f2ede1; --paper-dim: #e7e0cf; --accent: #e0a53a; --red: #d94a3a; }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 20px 16px; background: var(--ink); color: var(--paper); font-family: 'Courier Prime', 'Courier New', monospace; }
+        .container { max-width: 760px; margin: 0 auto; }
+        h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw + 1rem, 3.2rem); margin: 10px 0 0; letter-spacing: 0.02em; }
+        .intro { color: var(--paper-dim); margin: 6px 0 24px; }
+        .intro a, footer a { color: var(--accent); }
+        .piece { background: var(--paper); color: var(--ink); border: 3px solid #000; box-shadow: 6px 6px 0 #000; padding: 14px 16px; margin-bottom: 22px; }
+        .piece.latest { border-color: var(--accent); }
+        .piece h3 { font-family: 'VT323', monospace; font-size: 1.6rem; margin: 0 0 10px; font-weight: normal; }
+        .year-tag { display: inline-block; background: var(--ink); color: var(--paper); padding: 0 6px; margin-right: 8px; }
+        .piece.latest .year-tag { background: var(--red); }
+        audio { width: 100%; display: block; }
+        .meta { margin: 10px 0 2px; font-weight: bold; }
+        .sounds { margin: 0 0 6px; }
+        details { font-size: 0.85em; }
+        summary { cursor: pointer; }
+        details ul { margin: 6px 0 0; padding-left: 18px; word-break: break-word; }
+        footer { margin: 30px 0 10px; color: var(--paper-dim); font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AL HUT // DAILY MIXER</h1>
+        <p class="intro">A new piece every morning. Each day a few random folders from my sound archive go into the
+            <a href="https://mahmoud-ismail.itch.io/al-hut-audio-mixer-abo-kalleb">Mixer Abo Kalleb</a>, which drifts and layers them
+            for five minutes while its recorder runs. Played and recorded by Claude.</p>
+        <div id="pieces">Loading…</div>
+        <footer>© 2026 Mahmoud Ismail · Al Hut الحوت · <a href="https://alhutmusic.com">alhutmusic.com</a></footer>
+    </div>
+    <script src="daily.js"></script>
+</body>
+</html>

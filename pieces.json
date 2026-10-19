@@ -1,0 +1,35 @@
+[
+ {
+  "date": "2026-10-19",
+  "minutes": 5,
+  "mode": "AMBIENT",
+  "loops": "FULL",
+  "hop": 0,
+  "reverb": 0.58,
+  "delay": 0,
+  "drive": 0,
+  "file": "pieces/2026-10-19.mp3",
+  "folders": [
+   "guitar",
+   "organ",
+   "pedal",
+   "textures",
+   "voices"
+  ],
+  "sounds": [
+   "evening_guitar1.wav",
+   "motion_voices_3ain3_iris.wav",
+   "evening_guitar10.wav",
+   "motion_voices_3ain4_iris.wav",
+   "evening_guitar12.wav",
+   "motion_voices_3ain6_iris.wav",
+   "Bentempi Organ Samples switch ocatave bad1 .wav",
+   "Bentempi Organ Samples switch ocatave 7 .wav",
+   "organ loud glitchs disconnected noise4.wav",
+   "Bentempi Organ Samples switch ocatave 5 .wav",
+   "newguitarrecordin_boss_memoryman_bosspedal3.wav",
+   "Quetzalcoatl_texture_tonal1.wav",
+   "newguitarrecordin_memoryman_kp3_bosspedalAzzan.wav"
+  ]
+ }
+]
