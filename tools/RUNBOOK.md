@@ -1,7 +1,7 @@
 # Daily Mixer runbook
 
 Every morning: one ~5 minute piece with the Mixer Abo Kalleb from random sounds in Al Hut's Drive.
-**Private: only Al Hut listens.** No public links, never mention alhutmusic.com, Pages stays off.
+**Private: only Al Hut listens.** No public links, never mention alhutmusic.com, GitHub Pages stays off.
 
 Needs: this repo (push), the Google Drive connector, network access to `drive.usercontent.google.com`,
 `ffmpeg`, Pillow, and Playwright's Chromium (preinstalled in the cloud container).
@@ -55,5 +55,7 @@ git add -A pieces pieces.json && git commit -m "Daily piece <date>" && git push 
 
 ## 5. Send it to Al Hut
 
-Send the mp3 (`pieces/<date>.mp3`) to him in the session with SendUserFile, with a line or two about
-the sounds and the style. Email can't carry it (the Gmail tool needs the attachment inline). No links.
+Send him both files with SendUserFile (status proactive, so it reaches his phone): the original
+`$S/out/<date>.wav` (it is not kept anywhere else, so never skip it) and `pieces/<date>.mp3`,
+with a line or two about the sounds and the style. Email can't carry them (the Gmail tool needs
+the attachment inline). No links.
