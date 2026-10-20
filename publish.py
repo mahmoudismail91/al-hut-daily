@@ -1,7 +1,8 @@
 """Add a recorded piece to this site: encodes a 128 kbps mp3 into pieces/ and puts its entry first in pieces.json.
 Keeps the newest KEEP pieces so the site stays under GitHub Pages' 1 GB limit.
 usage: python3 publish.py <piece.mp3> <piece.json> [--image path]
-  (the json written by daily-piece.js; one image per piece, shrunk to a small 96 px square JPEG)
+  (the json written by tools/daily-piece.js; one image per piece, shrunk to a small 96 px square JPEG,
+   its name kept as image_name so it isn't reused within 30 pieces)
 """
 import argparse, json, pathlib, subprocess
 
@@ -31,6 +32,7 @@ if a.image:
     im = ImageOps.fit(ImageOps.exif_transpose(Image.open(a.image)).convert('RGB'), (96, 96))
     im.save(img, quality=85, optimize=True)
     entry['image'] = f"pieces/{img.name}"
+    entry['image_name'] = a.image.stem
 index = here / 'pieces.json'
 pieces = [p for p in json.loads(index.read_text()) if p['date'] != meta['date']] if index.exists() else []
 pieces = [entry] + pieces

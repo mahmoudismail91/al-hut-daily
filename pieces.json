@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-20",
+  "minutes": 5,
+  "mode": "AMBIENT",
+  "loops": "SLICES",
+  "hop": 4,
+  "reverb": 0.5,
+  "delay": 0,
+  "drive": 0,
+  "file": "pieces/2026-10-20.mp3",
+  "folders": [
+   "Giri_performance",
+   "Voice_Recordings_Iphone",
+   "ZoomRecordings",
+   "behringer_recordings"
+  ],
+  "sounds": [
+   "behringerrecordings2025_arpt10.wav",
+   "Static noise 1.wav",
+   "Ghader el zaman_ Giri sketch3.wav",
+   "behringerrecordings2025_arpt01.wav",
+   "ZOOM0038.WAV",
+   "popcornZOOM0086.WAV",
+   "casiotonefreqZOOM0090.WAV",
+   "boatanouncmentZOOM0066.WAV",
+   "Ghader el zaman_ Giri sketch2.wav"
+  ],
+  "image": "pieces/2026-10-20.jpg",
+  "image_name": "place by the fire"
+ },
+ {
   "date": "2026-10-19",
   "minutes": 5,
   "mode": "AMBIENT",
@@ -31,6 +61,7 @@
    "Quetzalcoatl_texture_tonal1.wav",
    "newguitarrecordin_memoryman_kp3_bosspedalAzzan.wav"
   ],
-  "image": "pieces/2026-10-19.jpg"
+  "image": "pieces/2026-10-19.jpg",
+  "image_name": "lost in the sea timeline"
  }
 ]
