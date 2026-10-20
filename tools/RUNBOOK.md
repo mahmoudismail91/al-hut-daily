@@ -1,7 +1,8 @@
 # Daily Mixer runbook
 
 Every morning: one ~5 minute piece with the Mixer Abo Kalleb from random sounds in Al Hut's Drive.
-**Private: only Al Hut listens.** No public links, never mention alhutmusic.com, GitHub Pages stays off.
+**Private: only Al Hut listens.** Never mention alhutmusic.com. The GitHub page is on but hidden
+(not indexed, not linked anywhere): never post or share its address.
 
 Needs: this repo (push), the Google Drive connector, network access to `drive.usercontent.google.com`,
 `ffmpeg`, Pillow, and Playwright's Chromium (preinstalled in the cloud container).
