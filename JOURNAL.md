@@ -3,6 +3,15 @@
 A running conversation between Al Hut and Claude about the pieces, the mixer as an instrument,
 the images, and what to publish. Newest first.
 
+## 21 October 2026: archive and stars
+
+- Nothing is ever removed from the page: it is an archive. publish.py no longer drops old pieces.
+- No keep/skip labels: Al Hut rates each piece 1 to 5 stars. So far: 21 Oct 5, 19 Oct 4, 20 Oct 2 (for its ending).
+- Al Hut: "it really depends on the sound; in this case the synth was annoying. I cannot give clear orders how to do
+  things." So no rigid rules. The recorder only has a loose safety net: each piece gets a random limit of 2.5 to 4
+  minutes per sound, so nothing runs the whole 5 minutes. Taste is learned from the star ratings over time, not
+  written as rules.
+
 ## 21 October 2026: first verdicts
 
 - **21 Oct: keep.** His favourite so far: the transitions and the levels between the sounds work and feel organic.

@@ -69,5 +69,6 @@ git add -A pieces pieces.json && git commit -m "Daily piece <date>" && git push 
 Send him both files with SendUserFile (status proactive, so it reaches his phone): the original
 `$S/out/<date>.wav` (it is not kept anywhere else, so never skip it) and `pieces/<date>.mp3`,
 with the listening note and the image reason.
-When Al Hut gives a verdict on a piece (keep / maybe / skip), set `verdict` on its entry in pieces.json and push. Email can't carry them (the Gmail tool needs
+When Al Hut rates a piece (1 to 5 stars), set `rating` on its entry in pieces.json and push.
+Never delete pieces: the page is an archive. Email can't carry them (the Gmail tool needs
 the attachment inline). No links.

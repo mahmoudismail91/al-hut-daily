@@ -1,5 +1,5 @@
 """Add a recorded piece to this site: encodes a 128 kbps mp3 into pieces/ and puts its entry first in pieces.json.
-Keeps the newest KEEP pieces so the site stays under GitHub Pages' 1 GB limit.
+Keeps every piece: the page is an archive (watch the GitHub Pages 1 GB limit).
 usage: python3 publish.py <piece.mp3> <piece.json> [--image path --why "..."] [--note "..."]
   (the json written by tools/daily-piece.js; one image per piece, shrunk to a small 96 px square JPEG,
    its name kept as image_name so it isn't reused within 30 pieces)
@@ -7,8 +7,6 @@ usage: python3 publish.py <piece.mp3> <piece.json> [--image path --why "..."] [-
 import argparse, json, pathlib, subprocess
 
 from PIL import Image, ImageOps
-
-KEEP = 150
 
 here = pathlib.Path(__file__).parent
 ap = argparse.ArgumentParser()
@@ -43,13 +41,9 @@ if a.image:
         entry['image_why'] = a.why
 index = here / 'pieces.json'
 pieces = json.loads(index.read_text()) if index.exists() else []
-# Al Hut's verdict (keep / maybe / skip) survives a re-publish of the same day
-entry['verdict'] = next((p.get('verdict') for p in pieces if p['date'] == meta['date']), None)
+# Al Hut's rating (1 to 5 stars) survives a re-publish of the same day
+entry['rating'] = next((p.get('rating') for p in pieces if p['date'] == meta['date']), None)
 pieces = [p for p in pieces if p['date'] != meta['date']]
 pieces = [entry] + pieces
-for old in pieces[KEEP:]:
-    (here / old['file']).unlink(missing_ok=True)
-    (here / old['file']).with_suffix('.jpg').unlink(missing_ok=True)
-pieces = pieces[:KEEP]
 index.write_text(json.dumps(pieces, indent=1, ensure_ascii=False) + '\n')
 print(f"added {entry['file']} ({len(pieces)} pieces)")

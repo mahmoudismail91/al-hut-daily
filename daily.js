@@ -13,7 +13,7 @@
     css.textContent = `
         #pieces .pic { width: 48px; height: 48px; object-fit: cover; border: 2px solid #000; vertical-align: middle; margin-right: 8px; }
         #pieces .note { font-style: italic; margin: 6px 0; }
-        #pieces .verdict { font-size: 0.8em; border: 1px solid currentColor; padding: 0 4px; margin-left: 8px; vertical-align: middle; }`;
+        #pieces .stars { margin-left: 10px; letter-spacing: 2px; vertical-align: middle; }`;
     document.head.appendChild(css);
 
     fetch(base + 'pieces.json', { cache: 'no-cache' })
@@ -22,7 +22,7 @@
             if (!list.length) { root.textContent = 'The first piece arrives tomorrow morning.'; return; }
             root.innerHTML = list.map((p, i) => `
                 <article class="piece${i === 0 ? ' latest' : ''}">
-                    <h3>${p.image ? `<img class="pic" src="${base}${esc(p.image)}" alt="${esc(p.image_name || '')}" title="${esc(p.image_why || p.image_name || '')}" loading="lazy">` : ''}<span class="year-tag">#${list.length - i}</span>${esc(fmt(p.date))}${p.verdict ? `<span class="verdict">${esc(p.verdict)}</span>` : ''}</h3>
+                    <h3>${p.image ? `<img class="pic" src="${base}${esc(p.image)}" alt="${esc(p.image_name || '')}" title="${esc(p.image_why || p.image_name || '')}" loading="lazy">` : ''}<span class="year-tag">#${list.length - i}</span>${esc(fmt(p.date))}${p.rating ? `<span class="stars" title="Al Hut's rating: ${p.rating} of 5">${'★'.repeat(p.rating)}${'☆'.repeat(5 - p.rating)}</span>` : ''}</h3>
                     <audio controls preload="${i === 0 ? 'metadata' : 'none'}" src="${base}${esc(p.file)}"></audio>
                     ${p.note ? `<p class="note">${esc(p.note)}</p>` : ''}
                     <p class="meta">${esc(styleLine(p))}</p>

@@ -1,5 +1,5 @@
 // Plays the Mixer Abo Kalleb in headless Chromium and records one piece with the app's own WAV recorder.
-// usage: node daily-piece.js <mixer index.html> <sounds dir named "drive"> <out dir> [--minutes 5] [--date YYYY-MM-DD]
+// usage: node daily-piece.js <mixer index.html> <sounds dir named "drive"> <out dir> [--minutes 5] [--date YYYY-MM-DD] [--max-layer seconds]
 // The sounds dir holds one subfolder per role (drive/<role>/<file>), so every subfolder becomes a Folder Role.
 // Writes <out>/<date>.wav and <out>/<date>.json (the json publish.py reads).
 const fs = require('fs'), path = require('path'), http = require('http');
@@ -8,6 +8,9 @@ const { chromium } = require('playwright');
 const args = process.argv.slice(2);
 const opt = (name, def) => { const i = args.indexOf('--' + name); return i < 0 ? def : args.splice(i, 2)[1]; };
 const minutes = parseFloat(opt('minutes', '5'));
+// A loose safety net, not a rule: no sound runs through the whole piece (20 Oct: one synth never left).
+// Each piece gets its own limit between 2.5 and 4 minutes, so long sounds can still hold a piece for a while.
+const MAX_LAYER_SECONDS = parseFloat(opt('max-layer', String(150 + Math.round(Math.random() * 90))));
 const date = opt('date', new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' }));
 const [mixerHtml, soundsDir, outDir] = args;
 if (!outDir) { console.error('usage: node daily-piece.js <mixer index.html> <sounds dir> <out dir> [--minutes 5] [--date YYYY-MM-DD]'); process.exit(2); }
@@ -76,6 +79,12 @@ function serve(dir) {
     while (Date.now() < end) {
         await sleep(Math.min(5000, end - Date.now()));
         await listen();
+        // swap out the oldest layer once it has played too long, one at a time, with the mode's own fade
+        await page.evaluate(max => {
+            const now = audioCtx.currentTime;
+            const old = activeTracks.filter(t => !t.held && now - t.bornAt > max).sort((a, b) => a.bornAt - b.bornAt)[0];
+            if (old) replaceTrack(old, manualFade(), true);
+        }, MAX_LAYER_SECONDS);
         if (style.mode === 'STANDARD' && Date.now() > nextMix && end - Date.now() > 30000) {
             await page.click('#btn-next');
             nextMix = Date.now() + rand(45, 90) * 1000;
