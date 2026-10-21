@@ -27,7 +27,27 @@
    "XhabarabotAmbiexRecordingambient12.wav"
   ],
   "image": "pieces/2026-10-21.jpg",
-  "image_name": "brokendreamsupermarket"
+  "image_name": "brokendreamsupermarket",
+  "analysis": {
+   "arc": [
+    -16.9,
+    -16.8,
+    -21.1,
+    -32.6,
+    -34.6,
+    -19.7,
+    -18.7,
+    -18.2,
+    -17.0,
+    -17.3
+   ],
+   "brightness": 1214,
+   "noisiness": 0.033,
+   "peak": -3.8
+  },
+  "note": "Bright, noisy and busy from the first second, then a near-silent hole around 1:30-2:30 before it all comes back. Volca drums and Xhabarabot voices against train air and airport ambience.",
+  "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
+  "verdict": null
  },
  {
   "date": "2026-10-20",
@@ -57,7 +77,27 @@
    "Ghader el zaman_ Giri sketch2.wav"
   ],
   "image": "pieces/2026-10-20.jpg",
-  "image_name": "place by the fire"
+  "image_name": "place by the fire",
+  "analysis": {
+   "arc": [
+    -28.7,
+    -25.9,
+    -24.6,
+    -22.2,
+    -23.0,
+    -21.3,
+    -21.4,
+    -17.2,
+    -20.5,
+    -25.5
+   ],
+   "brightness": 1128,
+   "noisiness": 0.024,
+   "peak": -1.6
+  },
+  "note": "A real arc: starts quiet, grows to its fullest around 3:30, then thins out. Boat announcement, popcorn and Casio tone ride over Giri sketches and Behringer arpeggios.",
+  "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
+  "verdict": null
  },
  {
   "date": "2026-10-19",
@@ -92,6 +132,27 @@
    "newguitarrecordin_memoryman_kp3_bosspedalAzzan.wav"
   ],
   "image": "pieces/2026-10-19.jpg",
-  "image_name": "lost in the sea timeline"
+  "image_name": "lost in the sea timeline",
+  "analysis": {
+   "arc": [
+    -26.6,
+    -18.6,
+    -23.2,
+    -25.6,
+    -23.7,
+    -25.4,
+    -25.4,
+    -25.1,
+    -22.4,
+    -25.1,
+    -37.7
+   ],
+   "brightness": 857,
+   "noisiness": 0.02,
+   "peak": -1.2
+  },
+  "note": "Dark and even: evening guitar, organ and voices hold one dim level the whole way, no big moves. A steady room more than a journey.",
+  "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
+  "verdict": null
  }
 ]

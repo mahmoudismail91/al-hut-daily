@@ -34,7 +34,16 @@ subfolder as a Folder Role, records with the app's WAV recorder in real time (~6
 Run it in the background and wait for it. Try a `--minutes 0.3 --date test` run first if anything changed.
 Check it isn't silent: `ffmpeg -i out/<date>.wav -af volumedetect -f null - 2>&1 | grep max_volume`.
 
-## 3. Pick ONE image
+## 3. Listen through the numbers, then pick ONE image
+
+Sound comes first: only choose the image once the piece is recorded.
+`python3 tools/analyze.py $S/out/<date>.wav` gives the loudness arc (dB per 30 s: builds, fades, holes),
+brightness (spectral centroid: under ~900 Hz dark, over ~1200 bright) and noisiness (0 tonal, higher textural).
+Read those together with the sources and the style, write a short listening note (1 to 2 sentences, what the
+piece does, not a list of settings), then choose the image whose mood, color and density fit that note.
+Write one line on why (`--why`). Al Hut checks these reasons, so be specific and honest.
+
+Image rules:
 
 - Only clearly his own work as a clean digital file: artwork exports, covers, digital drawings, scans.
 - No phone photos of prints or screens, no screenshots, no photos of objects, no HEIC, no DSC folders.
@@ -50,7 +59,8 @@ Check it isn't silent: `ffmpeg -i out/<date>.wav -af volumedetect -f null - 2>&1
 ## 4. Publish
 
 ```
-python3 publish.py $S/out/<date>.wav $S/out/<date>.json --image "$S/<image name>.jpg"
+python3 publish.py $S/out/<date>.wav $S/out/<date>.json --image "$S/<image name>.jpg" \
+  --note "<listening note>" --why "<why this image fits this sound>"
 git add -A pieces pieces.json && git commit -m "Daily piece <date>" && git push origin main
 ```
 
@@ -58,5 +68,6 @@ git add -A pieces pieces.json && git commit -m "Daily piece <date>" && git push 
 
 Send him both files with SendUserFile (status proactive, so it reaches his phone): the original
 `$S/out/<date>.wav` (it is not kept anywhere else, so never skip it) and `pieces/<date>.mp3`,
-with a line or two about the sounds and the style. Email can't carry them (the Gmail tool needs
+with the listening note and the image reason.
+When Al Hut gives a verdict on a piece (keep / maybe / skip), set `verdict` on its entry in pieces.json and push. Email can't carry them (the Gmail tool needs
 the attachment inline). No links.

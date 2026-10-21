@@ -11,7 +11,9 @@
 
     const css = document.createElement('style');
     css.textContent = `
-        #pieces .pic { width: 48px; height: 48px; object-fit: cover; border: 2px solid #000; vertical-align: middle; margin-right: 8px; }`;
+        #pieces .pic { width: 48px; height: 48px; object-fit: cover; border: 2px solid #000; vertical-align: middle; margin-right: 8px; }
+        #pieces .note { font-style: italic; margin: 6px 0; }
+        #pieces .verdict { font-size: 0.8em; border: 1px solid currentColor; padding: 0 4px; margin-left: 8px; vertical-align: middle; }`;
     document.head.appendChild(css);
 
     fetch(base + 'pieces.json', { cache: 'no-cache' })
@@ -20,8 +22,9 @@
             if (!list.length) { root.textContent = 'The first piece arrives tomorrow morning.'; return; }
             root.innerHTML = list.map((p, i) => `
                 <article class="piece${i === 0 ? ' latest' : ''}">
-                    <h3>${p.image ? `<img class="pic" src="${base}${esc(p.image)}" alt="" loading="lazy">` : ''}<span class="year-tag">#${list.length - i}</span>${esc(fmt(p.date))}</h3>
+                    <h3>${p.image ? `<img class="pic" src="${base}${esc(p.image)}" alt="${esc(p.image_name || '')}" title="${esc(p.image_why || p.image_name || '')}" loading="lazy">` : ''}<span class="year-tag">#${list.length - i}</span>${esc(fmt(p.date))}${p.verdict ? `<span class="verdict">${esc(p.verdict)}</span>` : ''}</h3>
                     <audio controls preload="${i === 0 ? 'metadata' : 'none'}" src="${base}${esc(p.file)}"></audio>
+                    ${p.note ? `<p class="note">${esc(p.note)}</p>` : ''}
                     <p class="meta">${esc(styleLine(p))}</p>
                     <p class="sounds">${p.folders.map(esc).join(' / ')}</p>
                     <details><summary>${p.sounds.length} sounds</summary><ul>${p.sounds.map(s => `<li>${esc(s)}</li>`).join('')}</ul></details>
