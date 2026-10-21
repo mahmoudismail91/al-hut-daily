@@ -3,6 +3,21 @@
 A running conversation between Al Hut and Claude about the pieces, the mixer as an instrument,
 the images, and what to publish. Newest first.
 
+## 21 October 2026: first verdicts
+
+- **21 Oct: keep.** His favourite so far: the transitions and the levels between the sounds work and feel organic.
+  (So the near-silent stretch around 1:30 heard as breath, not a flaw.)
+- **19 Oct: keep.** Opens with his voice through an effect, builds slowly, then a rhythm comes in, a banging on a
+  drum, and it works very well.
+- **20 Oct: skip.** Not so much. It was the one Ambient piece with short slices hopping every 4 loops.
+
+What this teaches:
+- The numbers miss what matters: they called 19 Oct "dark and even, no big moves", but he hears a slow build into a
+  drum entrance. The listening note has to stay modest, and his ear corrects it.
+- He responds to whole sounds meeting and changing level, slow builds, a clear entrance, and contrast, more than
+  to chopped slices. Style weights nudged accordingly: Standard 50% (was 40%), whole-file loops 65% (was 50%).
+  One week of verdicts will tell us whether that holds.
+
 ## 21 October 2026: how it plays, how images are chosen, publishing
 
 **The mixer as a player** (from the first three pieces' loudness arcs):

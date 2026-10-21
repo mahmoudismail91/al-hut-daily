@@ -17,9 +17,10 @@ const rand = (lo, hi) => Math.round((lo + Math.random() * (hi - lo)) * 100) / 10
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // A random style. Effects are often off, so pieces don't all sound washed out.
+// Weighted by Al Hut's verdicts so far: whole-file loops and Standard's transitions over slices with hop.
 const style = {
-    mode: Math.random() < 0.6 ? 'AMBIENT' : 'STANDARD',
-    loops: Math.random() < 0.5 ? 'FULL' : 'SLICES',
+    mode: Math.random() < 0.5 ? 'AMBIENT' : 'STANDARD',
+    loops: Math.random() < 0.65 ? 'FULL' : 'SLICES',
     reverb: Math.random() < 0.7 ? rand(0.15, 0.7) : 0,
     delay: Math.random() < 0.4 ? rand(0.1, 0.5) : 0,
     drive: Math.random() < 0.3 ? rand(0.1, 0.5) : 0,

@@ -45,9 +45,9 @@
    "noisiness": 0.033,
    "peak": -3.8
   },
-  "note": "Bright, noisy and busy from the first second, then a near-silent hole around 1:30-2:30 before it all comes back. Volca drums and Xhabarabot voices against train air and airport ambience.",
+  "note": "Bright, noisy and busy from the first second, then a near-silent hole around 1:30-2:30 before it all comes back. Volca drums and Xhabarabot voices against train air and airport ambience. Al Hut: the transitions and the levels between the sounds work and feel organic.",
   "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
-  "verdict": null
+  "verdict": "keep"
  },
  {
   "date": "2026-10-20",
@@ -97,7 +97,7 @@
   },
   "note": "A real arc: starts quiet, grows to its fullest around 3:30, then thins out. Boat announcement, popcorn and Casio tone ride over Giri sketches and Behringer arpeggios.",
   "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
-  "verdict": null
+  "verdict": "skip"
  },
  {
   "date": "2026-10-19",
@@ -151,8 +151,8 @@
    "noisiness": 0.02,
    "peak": -1.2
   },
-  "note": "Dark and even: evening guitar, organ and voices hold one dim level the whole way, no big moves. A steady room more than a journey.",
+  "note": "Opens with Al Hut's voice through an effect and builds slowly; then a rhythm comes in, a banging on a drum, and it works very well. (His listening: the numbers had called it dark and even.)",
   "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
-  "verdict": null
+  "verdict": "keep"
  }
 ]
