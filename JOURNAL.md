@@ -11,12 +11,20 @@ the images, and what to publish. Newest first.
   drum, and it works very well.
 - **20 Oct: skip.** Not so much. It was the one Ambient piece with short slices hopping every 4 loops.
 
+Later the same day, more listening:
+- **19 Oct** is the darkest so far: creepy, fitting for a ritual or a horror scene.
+- **20 Oct** feels too much because the synth (Behringer arpeggio) runs the whole time, but he really likes the ending
+  after 4:00. Verdict changed to "keep the ending": excerpts count. A volume can hold fragments, not only whole pieces.
+
 What this teaches:
 - The numbers miss what matters: they called 19 Oct "dark and even, no big moves", but he hears a slow build into a
   drum entrance. The listening note has to stay modest, and his ear corrects it.
 - He responds to whole sounds meeting and changing level, slow builds, a clear entrance, and contrast, more than
   to chopped slices. Style weights nudged accordingly: Standard 50% (was 40%), whole-file loops 65% (was 50%).
   One week of verdicts will tell us whether that holds.
+- One sound running the whole time kills it (20 Oct). Watch for a layer that never leaves; if it keeps happening,
+  the recorder should swap out any layer that has played longer than ~2 minutes.
+- Mood words like "ritual", "horror", "organic" are better guides for choosing images than brightness numbers.
 
 ## 21 October 2026: how it plays, how images are chosen, publishing
 
