@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-10-21",
+  "minutes": 5,
+  "mode": "STANDARD",
+  "loops": "FULL",
+  "hop": 0,
+  "reverb": 0.23,
+  "delay": 0,
+  "drive": 0,
+  "file": "pieces/2026-10-21.mp3",
+  "folders": [
+   "Rully_Voice_Maschines",
+   "hashday1",
+   "mixrabokalleb_train",
+   "volcadrum_project"
+  ],
+  "sounds": [
+   "volcadrum2_2.wav",
+   "hashdaysynthlayer3.wav",
+   "XhabarabotAmbiexRecordingmelodicsamplechange3.wav",
+   "AlHut_ZOOM0045_Trainair_granulator.wav",
+   "XhabarabotAmbiexRecordingambientchange1.wav",
+   "hashdaysynthlayer1.wav",
+   "volcadrum2_1.wav",
+   "AlHut_airportamb_Musicroast_Ougranular.wav",
+   "XhabarabotAmbiexRecordingambient12.wav"
+  ],
+  "image": "pieces/2026-10-21.jpg",
+  "image_name": "brokendreamsupermarket"
+ },
+ {
   "date": "2026-10-20",
   "minutes": 5,
   "mode": "AMBIENT",
