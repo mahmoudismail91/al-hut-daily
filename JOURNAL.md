@@ -11,6 +11,8 @@ the images, and what to publish. Newest first.
   things." So no rigid rules. The recorder only has a loose safety net: each piece gets a random limit of 2.5 to 4
   minutes per sound, so nothing runs the whole 5 minutes. Taste is learned from the star ratings over time, not
   written as rules.
+- Listeners who stumble on the page can rate too: 1 to 5 stars, once per piece, shown as an average next to
+  Al Hut's own stars. Stored in a free Supabase table (tools/ratings.sql); off until the project is set up.
 
 ## 21 October 2026: first verdicts
 
