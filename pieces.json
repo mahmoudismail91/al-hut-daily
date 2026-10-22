@@ -1,5 +1,51 @@
 [
  {
+  "date": "2026-10-22",
+  "minutes": 5,
+  "mode": "AMBIENT",
+  "loops": "SLICES",
+  "hop": 4,
+  "reverb": 0,
+  "delay": 0.4,
+  "drive": 0.34,
+  "file": "pieces/2026-10-22.mp3",
+  "folders": [
+   "GuitarFeedback1_Kaosspad_volca_mixerreturn",
+   "Memory_Man_Casio_Boss_Guitar",
+   "kp3gggggjgjgj"
+  ],
+  "sounds": [
+   "5_casiotone_memoryman_mixture_4.wav",
+   "GuitarFeedback1_Kaosspad_volca_mixerreturn04.wav",
+   "GuitarFeedback1_Kaosspad_volca_mixerreturn03.wav",
+   "kp3gggjgjgjggj6.wav",
+   "7_casiotone_memoryman_mixture_2.wav",
+   "3_newguitarrecordin_boss_memoryman_bosspedal7.wav"
+  ],
+  "analysis": {
+   "arc": [
+    -26.1,
+    -26.5,
+    -29.5,
+    -26.3,
+    -27.2,
+    -20.5,
+    -19.1,
+    -21.9,
+    -23.9,
+    -31.7
+   ],
+   "brightness": 1746,
+   "noisiness": 0.037,
+   "peak": -3.2
+  },
+  "note": "The brightest and noisiest so far: guitar feedback through the Kaoss Pad and Volca, Casio and Memory Man mixtures and a KP3 jam, cut into short slices with delay and drive. Low and restless for the first half, it swells around 2:30-3:30, then drains away.",
+  "image": "pieces/2026-10-22.jpg",
+  "image_name": "Unaatitled-1",
+  "image_why": "A tangle of black scribbles with sharp spikes and beams: the same knotted, electric restlessness as the feedback and the chopped, driven slices.",
+  "rating": null
+ },
+ {
   "date": "2026-10-21",
   "minutes": 5,
   "mode": "STANDARD",
