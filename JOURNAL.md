@@ -3,6 +3,16 @@
 A running conversation between Al Hut and Claude about the pieces, the mixer as an instrument,
 the images, and what to publish. Newest first.
 
+## 22 October 2026: first sound-first piece
+
+- Al Hut: calmer than the others, a travelling, train-like rhythm and vibe. Starts with keys and many elements, thins
+  to textures and rhythms, goes quiet, then swells again; not sure about that shape but it's nice. Best 2:00 to 3:30.
+- The numbers called it "the brightest and noisiest so far"; he hears it as calmer. Second time the measurements and
+  his ear disagree: brightness and noisiness don't tell calm from restless. Listening notes lean on his words.
+- Images: the drawings so far came from `02_Visual Art/Scans & Notebooks/illustrations_scan` on alhutmusic@gmail.com,
+  his earliest drawings, and he isn't sure about using them. Newer work lives elsewhere in `02_Visual Art`
+  (e.g. `Paintings & Drawings/scandrawings_new2026`); waiting for him to say which folders to draw from.
+
 ## 21 October 2026: archive and stars
 
 - Nothing is ever removed from the page: it is an archive. publish.py no longer drops old pieces.
