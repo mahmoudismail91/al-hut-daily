@@ -39,11 +39,12 @@
    "noisiness": 0.037,
    "peak": -3.2
   },
-  "note": "Calmer than the others, with a travelling, train-like rhythm and vibe. Opens with keys and many elements, thins to textures and rhythms, goes quiet, then swells again; best from 2:00 to 3:30 (Al Hut).",
+  "note": "More noise than the others, yet soothing: a calming, melancholic atmosphere with a travelling, train-like rhythm. Opens with keys and many elements, thins to textures and rhythms, goes quiet, then swells again; best from 2:00 to 3:30 (Al Hut).",
   "image": "pieces/2026-10-22.jpg",
   "image_name": "Unaatitled-1",
   "image_why": "A tangle of black scribbles with sharp spikes and beams: the same knotted, electric restlessness as the feedback and the chopped, driven slices.",
-  "rating": null
+  "rating": null,
+  "image_folder": "illustrations_scan"
  },
  {
   "date": "2026-10-21",
@@ -93,7 +94,8 @@
   },
   "note": "Bright, noisy and busy from the first second, then a near-silent hole around 1:30-2:30 before it all comes back. Volca drums and Xhabarabot voices against train air and airport ambience. Al Hut: the transitions and the levels between the sounds work and feel organic.",
   "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
-  "rating": 5
+  "rating": 5,
+  "image_folder": "illustrations_scan"
  },
  {
   "date": "2026-10-20",
@@ -143,7 +145,8 @@
   },
   "note": "Too much: the synth arpeggio runs the whole time. But the ending after 4:00 is a keeper, Al Hut really likes it.",
   "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
-  "rating": 2
+  "rating": 2,
+  "image_folder": "illustrations_scan"
  },
  {
   "date": "2026-10-19",
@@ -199,6 +202,7 @@
   },
   "note": "The darkest so far: creepy, fitting for a ritual or a horror scene. Opens with Al Hut's voice through an effect and builds slowly; then a rhythm comes in, a banging on a drum, and it works very well.",
   "image_why": "Chosen by the image rules before the piece was recorded (before sound came first).",
-  "rating": 4
+  "rating": 4,
+  "image_folder": "illustrations_scan"
  }
 ]

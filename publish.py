@@ -14,6 +14,7 @@ ap.add_argument('mp3', type=pathlib.Path)
 ap.add_argument('meta', type=pathlib.Path)
 ap.add_argument('--image', type=pathlib.Path, help='one image for the piece')
 ap.add_argument('--why', help='one line: why this image fits this sound')
+ap.add_argument('--image-folder', help='the Drive folder the image came from, so the choice moves around')
 ap.add_argument('--note', help='a short listening note about the piece')
 a = ap.parse_args()
 mp3, meta = a.mp3, json.loads(a.meta.read_text())
@@ -39,6 +40,8 @@ if a.image:
     entry['image_name'] = a.image.stem
     if a.why:
         entry['image_why'] = a.why
+    if a.image_folder:
+        entry['image_folder'] = a.image_folder
 index = here / 'pieces.json'
 pieces = json.loads(index.read_text()) if index.exists() else []
 # Al Hut's rating (1 to 5 stars) survives a re-publish of the same day

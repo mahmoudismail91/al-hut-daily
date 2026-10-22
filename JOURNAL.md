@@ -11,7 +11,10 @@ the images, and what to publish. Newest first.
   his ear disagree: brightness and noisiness don't tell calm from restless. Listening notes lean on his words.
 - Images: the drawings so far came from `02_Visual Art/Scans & Notebooks/illustrations_scan` on alhutmusic@gmail.com,
   his earliest drawings, and he isn't sure about using them. Newer work lives elsewhere in `02_Visual Art`
-  (e.g. `Paintings & Drawings/scandrawings_new2026`); waiting for him to say which folders to draw from.
+  (e.g. `Paintings & Drawings/scandrawings_new2026`).
+- His answer: more noise, but soothing, a calming and melancholic atmosphere. Images: use drawings, including the
+  early ones, but don't get stuck in one folder. Runbook now looks across all of `02_Visual Art` (not AI) and skips
+  the subfolders used in the last 3 pieces.
 
 ## 21 October 2026: archive and stars
 

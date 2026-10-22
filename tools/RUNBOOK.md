@@ -49,9 +49,16 @@ Image rules:
 - No phone photos of prints or screens, no screenshots, no photos of objects, no HEIC, no DSC folders.
 - No nudity ("CCF12062015-3 copy.jpg" is out).
 - Not used in the last 30 pieces: `jq -r '.[:30][].image_name // empty' pieces.json`.
-- Good source: Drive folder `1__ZfghdQl1P8tgPNHGmdkhPDbpydPd7E` (place by the fire, brokendreamsupermarket,
-  store fo buying prespectives, ssss1, lost in the sea timeline, ...). Its `SKM_C224e...` files are
-  scanner output: look before using. Also fine: "memorymanalbum_3000_final.jpg".
+- Look across all of `02_Visual Art` on alhutmusic@gmail.com (folder `1f6B1GMoywad0Z5-Uw3NkfZBkwYV_TNIP`), and don't get
+  stuck in one folder: skip the subfolders used in the last 3 pieces (`jq -r '.[:3][].image_folder' pieces.json`).
+  - `Paintings & Drawings` (`1z7pUVPVAoQrmGvWbcwLL9Y5mihStASjQ`): newer work, e.g. `scandrawings_new2026`, `castleline`,
+    `frames200shms`, `comicgiff`, `dissdat_gif`.
+  - `Scans & Notebooks/illustrations_scan` (`1__ZfghdQl1P8tgPNHGmdkhPDbpydPd7E`): his earliest drawings (place by the fire,
+    brokendreamsupermarket, ...). Fine to use sometimes, not every day. Its `SKM_C224e...` files are scanner output: look first.
+  - `Unfinished`, `GIFs` (use a still), `Video Frame Grabs`, `Skyboxes`: also fair game if the image fits.
+  - Leave out `Digital & AI` (AI images are not "his own work") unless he says otherwise. The Memory Man cover
+    ("memorymanalbum_3000_final.jpg") is also fine.
+- Pass the subfolder name as `--image-folder` to publish.py.
 - Images aren't shared by link: download with the connector's `download_file_content`. The result is
   saved to a file; `jq -r .content <file> | base64 -d > "$S/<image name>.jpg"`. Keep the real name:
   publish.py stores the file stem as `image_name`. Look at it before using it.
@@ -60,7 +67,7 @@ Image rules:
 
 ```
 python3 publish.py $S/out/<date>.wav $S/out/<date>.json --image "$S/<image name>.jpg" \
-  --note "<listening note>" --why "<why this image fits this sound>"
+  --note "<listening note>" --why "<why this image fits this sound>" --image-folder "<Drive subfolder>"
 git add -A pieces pieces.json && git commit -m "Daily piece <date>" && git push origin main
 ```
 
