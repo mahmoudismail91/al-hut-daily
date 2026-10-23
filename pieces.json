@@ -1,5 +1,54 @@
 [
  {
+  "date": "2026-10-23",
+  "minutes": 5,
+  "mode": "AMBIENT",
+  "loops": "SLICES",
+  "hop": 0,
+  "reverb": 0,
+  "delay": 0,
+  "drive": 0,
+  "file": "pieces/2026-10-23.mp3",
+  "folders": [
+   "Glitches",
+   "Iris_samples",
+   "psc1",
+   "sp404_casio"
+  ],
+  "sounds": [
+   "glitch5.wav",
+   "sp-404_casiorythem1.wav",
+   "motion_voices_3ain7_iris.wav",
+   "glitchguitar1.wav",
+   "pad_iris2.wav",
+   "psc1_drms2.wav",
+   "motion_voices_salamal3ain1_iris.wav"
+  ],
+  "analysis": {
+   "arc": [
+    -28.4,
+    -24.8,
+    -26.2,
+    -26.1,
+    -24.0,
+    -25.2,
+    -20.0,
+    -16.3,
+    -18.8,
+    -16.5
+   ],
+   "brightness": 1225,
+   "noisiness": 0.025,
+   "peak": -2.4
+  },
+  "note": "Dry and close, no effects: Iris's voices and pad cut into short loops, small guitar glitches, a Casio rhythm from the SP-404 and psc1 drums. It builds slowly the whole way and is fullest in the last minute and a half.",
+  "image": "pieces/2026-10-23.jpg",
+  "image_name": "img20260219_17175405",
+  "image_why": "An ink wash from this year: a grey cloud over dense vertical strokes that knot together at the bottom, like short looped voices and rhythms stacking up under a pad and thickening towards the end.",
+  "image_folder": "scandrawings_new2026/edited",
+  "rating": null
+ },
+ {
   "date": "2026-10-22",
   "minutes": 5,
   "mode": "AMBIENT",
