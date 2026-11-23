@@ -1,5 +1,53 @@
 [
  {
+  "date": "2026-11-23",
+  "minutes": 5,
+  "mode": "AMBIENT",
+  "loops": "FULL",
+  "hop": 0,
+  "reverb": 0.6,
+  "delay": 0,
+  "drive": 0,
+  "file": "pieces/2026-11-23.mp3",
+  "folders": [
+   "BossPEdal",
+   "Granulator_proccessed",
+   "KP3_Pedal",
+   "guitar11111"
+  ],
+  "sounds": [
+   "kp3 + pedals_cleanbeat1.wav",
+   "guitar_jam_practice16_distortion_delay_slowguitar.wav",
+   "Quetzalcoatl_texture1.wav",
+   "Quetzalcoatl_texture_waves1.wav",
+   "guitar_improv_a_minor1.wav",
+   "newguitarrecordin_boss_memoryman_bosspedal11.wav"
+  ],
+  "analysis": {
+   "arc": [
+    -31.0,
+    -24.2,
+    -28.3,
+    -28.1,
+    -27.6,
+    -24.4,
+    -23.3,
+    -25.0,
+    -22.5,
+    -23.0
+   ],
+   "brightness": 1031,
+   "noisiness": 0.025,
+   "peak": -3.5
+  },
+  "note": "Slow and wide under heavy reverb: a KP3 beat beneath slow distorted guitar and an A-minor improvisation, with the granular Quetzalcoatl textures and waves around them. Quiet through the middle, it opens up gently in the second half.",
+  "image": "pieces/2026-11-23.jpg",
+  "image_name": "img20260221_13304204",
+  "image_why": "A small ink and watercolour sketch from this year: one figure walking down a warm pink and yellow path under dark scribbled trees, slow and wandering like the piece.",
+  "image_folder": "scandrawings_new2026/sketchs",
+  "rating": null
+ },
+ {
   "date": "2026-10-23",
   "minutes": 5,
   "mode": "AMBIENT",
