@@ -3,6 +3,15 @@
 A running conversation between Al Hut and Claude about the pieces, the mixer as an instrument,
 the images, and what to publish. Newest first.
 
+## 23 November 2026: textures vs melody, mastering
+
+- No pieces between 23 Oct and 23 Nov: the daily wake-ups never reached this conversation. Cause unknown.
+- 23 Nov: "great", except the granular Quetzalcoatl textures are lovely at times but at other times get in the way
+  and overwhelm the melody. Dense textures need to sit lower than melodic sounds.
+- Loudness of the pieces so far: -19 to -24 LUFS integrated, peaks -1 to -4 dBFS, loudness range 8 to 15 LU.
+  Fine for listening on the page; quiet next to streaming releases (around -14 LUFS). Pieces chosen for a release
+  get mastered then, not every daily piece. Mastering can't fix a texture covering a melody: that's the mix.
+
 ## 22 October 2026: first sound-first piece
 
 - Al Hut: calmer than the others, a travelling, train-like rhythm and vibe. Starts with keys and many elements, thins
