@@ -71,10 +71,15 @@ python3 publish.py $S/out/<date>.wav $S/out/<date>.json --image "$S/<image name>
 git add -A pieces pieces.json && git commit -m "Daily piece <date>" && git push origin main
 ```
 
+Then make the files he keeps, with the artwork and details embedded (needs `pip install mutagen`; keep the
+full-size image you chose, not the thumbnail; crop big white scanner margins first):
+`python3 tools/tag.py $S/out/<date>.wav <date> "$S/<image name>.jpg" $S/keep`
+
 ## 5. Send it to Al Hut
 
-Send him both files with SendUserFile (status proactive, so it reaches his phone): the original
-`$S/out/<date>.wav` (it is not kept anywhere else, so never skip it) and `pieces/<date>.mp3`,
+Send him both files from `$S/keep` with SendUserFile (status proactive, so it reaches his phone): the original
+WAV (it is not kept anywhere else, so never skip it) and the 320 kbps mp3. He saves them in
+`D:\Audio\Export Audio\abo_kalleb_daily`. Send them
 with the listening note and the image reason.
 When Al Hut rates a piece (1 to 5 stars), set `rating` on its entry in pieces.json and push.
 Never delete pieces: the page is an archive. Email can't carry them (the Gmail tool needs
