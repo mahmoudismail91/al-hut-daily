@@ -1,5 +1,54 @@
 [
  {
+  "date": "2026-11-24",
+  "minutes": 5,
+  "mode": "AMBIENT",
+  "loops": "FULL",
+  "hop": 0,
+  "reverb": 0.18,
+  "delay": 0,
+  "drive": 0,
+  "file": "pieces/2026-11-24.mp3",
+  "folders": [
+   "Comic_facless",
+   "Feel_Set_Dome",
+   "lakeday404",
+   "music_theory_practice"
+  ],
+  "sounds": [
+   "sp404improv1.wav",
+   "ominispher_minorscale _C_improvisation08.wav",
+   "al_hut_mix_20250912_153731.wav",
+   "clicks1.wav",
+   "eat the lonly_1.wav",
+   "serum_improvisation c minor lush 02.wav",
+   "dorian key improvistion 01.wav"
+  ],
+  "analysis": {
+   "arc": [
+    -21.8,
+    -23.1,
+    -22.7,
+    -21.0,
+    -24.7,
+    -27.1,
+    -23.8,
+    -22.3,
+    -20.5,
+    -23.4
+   ],
+   "brightness": 897,
+   "noisiness": 0.02,
+   "peak": -4.7
+  },
+  "note": "Tonal and dark, the least noisy so far: Dorian keys and lush minor-key Serum and Omnisphere improvisations, an SP-404 improvisation, 'eat the lonly' and clicks from the dome set, and an older mixer recording. Steady, with a dip around 2:00-3:00 before it comes back, fullest near 4:00.",
+  "image": "pieces/2026-11-24.jpg",
+  "image_name": "facelesscity_0000s_0000_Layer 18",
+  "image_why": "A panel from the faceless city comic: one faceless figure with a tear under a dark orange sky, as melancholic and minor-key as the improvisations; and it comes from the same faceless/comic project as one of the sound folders.",
+  "image_folder": "Unfinished/faceless _ comic",
+  "rating": null
+ },
+ {
   "date": "2026-11-23",
   "minutes": 5,
   "mode": "AMBIENT",
